@@ -47,7 +47,7 @@ class MaterialInformation(BaseModel):
 
 
 class Will(BaseModel):
-    model_config = ConfigDict(extra="allow")
+    model_config = ConfigDict(extra="ignore")
 
     title: BaseValue
     executor: List[str]
@@ -76,7 +76,7 @@ class Trustee(BaseModel):
 
 
 class Trust(BaseModel):
-    model_config = ConfigDict(extra="allow")
+    model_config = ConfigDict(extra="ignore")
 
     title: BaseValue
     dateOfTrust: str
